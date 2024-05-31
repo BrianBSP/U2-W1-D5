@@ -121,3 +121,38 @@ h4 {
   border-radius: 3px;
   width: auto;
 }
+.big-container {
+  max-width: 900px;
+  margin-inline: auto;
+  display: flex;
+  column-gap: 20px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+/* aside */
+aside {
+  max-width: 350px;
+}
+aside h5 {
+  padding-left: 5px;
+  margin-block: 10px;
+  font-weight: 500;
+}
+.container-dicover button {
+  background-color: rgb(207, 207, 207);
+  color: #464646;
+  border: none;
+  border-radius: 50px;
+  margin: 3px;
+  font-size: 0.8rem;
+  padding: 6px;
+  padding-inline: 14px;
+}
