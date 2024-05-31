@@ -11,6 +11,7 @@ body {
 header {
   background-color: #ffc017;
   padding-top: 20px;
+  border-bottom: 1px solid black;
 
   margin-inline: auto;
 }
@@ -26,6 +27,9 @@ hr {
   border-width: 1px;
 }
 nav {
+  /*  padding-left: 259px;
+  padding-right: 293px; */
+  min-width: 500px;
   background-color: #ffc017;
   max-width: 900px;
   padding-top: 10px;
@@ -39,6 +43,8 @@ nav {
   right: 0;
   z-index: 999;
   border-bottom: 1px solid black;
+  transition: background-color 1.3s;
+
   padding-bottom: 5px;
 }
 nav ul {
@@ -54,10 +60,26 @@ nav li {
   color: rgb(209, 209, 209);
   padding: 5px 15px;
   border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 1.3s;
 }
+nav.scrolled {
+  background-color: white;
+}
+.btn-nav.scrolled {
+  background-color: #1a8917;
+}
+
+/* Prove */
+/* .btn-nav:hover {
+  background-color: #1a8917;
+} */
+
+/* transition bottone allo scroll */
+
 .logo-img {
   /* flex-grow: 2; */
-  margin-right: 250px;
+  margin-right: 150px;
 }
 h1 {
   font-family: "Spectral", serif;
@@ -76,7 +98,7 @@ h1 {
 }
 .emme {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 85%;
   height: 300px;
 }
@@ -89,6 +111,8 @@ h1 {
 }
 section h3::before {
   content: url("../imgs/svg/trending.svg");
+  position: relative;
+
   margin-right: 10px;
 }
 h3 {
@@ -137,15 +161,16 @@ h4 {
   margin-top: 13px;
   letter-spacing: 1px;
 }
-.box-info :first-child::before {
+/* .box-info :first-child::before {
   content: url("../imgs/image01.jpeg");
   margin-right: 5px;
   border-radius: 3px;
   width: auto;
-}
+} */
 .big-container {
   max-width: 900px;
   margin-inline: auto;
+  margin-top: 30px;
   display: flex;
   column-gap: 20px;
   align-items: start;
@@ -186,4 +211,7 @@ aside h5 {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+.applyscroll {
+  background-color: #1a8917;
 }
