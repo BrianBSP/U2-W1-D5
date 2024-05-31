@@ -57,7 +57,7 @@ nav li {
 .btn {
   max-width: 150px;
   background-color: #191919;
-  color: rgb(209, 209, 209);
+  color: rgb(230, 230, 230);
   padding: 5px 15px;
   border-radius: 50px;
   cursor: pointer;
@@ -109,14 +109,19 @@ h1 {
   justify-content: center;
   row-gap: 25px;
 }
-section h3::before {
+/* section h3::before {
   content: url("../imgs/svg/trending.svg");
   position: relative;
 
   margin-right: 10px;
-}
+} */
 h3 {
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-top: 8px;
+}
+
+.titolo-section {
+  display: flex;
 }
 section {
   max-width: 900px;
@@ -145,6 +150,7 @@ section {
 .box-info {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
 }
 h4 {
   font-size: 13px;
@@ -154,12 +160,21 @@ h4 {
 .box-info p {
   font-size: 12px;
   margin-bottom: 13px;
+  padding-left: 5px;
+  padding-top: 8px;
 }
-.box-info p:last-of-type {
+/* .box-info p:last-of-type {
   font-size: 10px;
   color: rgb(95, 95, 95);
   margin-top: 13px;
   letter-spacing: 1px;
+} */
+.box-info-titolo {
+  display: flex;
+}
+.box-info-titolo img {
+  width: 25px;
+  height: 25px;
 }
 /* .box-info :first-child::before {
   content: url("../imgs/image01.jpeg");
