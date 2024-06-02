@@ -92,7 +92,7 @@ h1 {
 }
 .emme {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 0;
   height: 300px;
 }
@@ -167,7 +167,6 @@ h4 {
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
-
 .box-info-data {
   display: flex;
   justify-content: space-between;
@@ -194,14 +193,52 @@ article {
   flex-direction: column;
   row-gap: 30px;
 }
+.box-article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+.box-article-par p {
+  font-size: 12px;
+  font-weight: 100;
+  color: grey;
+  padding-block: 10px;
+  overflow-x: hidden;
+  width: 335px;
+}
+.box-article-img img {
+  width: 185px;
+}
+.box-article-par {
+  display: flex;
+  flex-direction: column;
+}
 h2 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
+  padding-block: 7px;
+}
+.box-info-data {
+  display: flex;
+  justify-content: space-between;
+}
+.box-info-data p {
+  font-size: 10px;
+  color: grey;
+}
+.box-info-data p span {
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 2px;
+}
+.box-info-data img {
+  width: 20px;
 }
 /* aside */
 aside {
-  max-width: 350px;
+  max-width: 330px;
   position: sticky;
   top: 50px;
 }
@@ -211,7 +248,7 @@ aside h5 {
   font-weight: 500;
 }
 .container-dicover button {
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(214, 214, 214);
   color: #464646;
   border: none;
   border-radius: 50px;
@@ -224,7 +261,17 @@ aside h5 {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  min-width: 330px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(214, 214, 214);
 }
-/* .applyscroll {
-  background-color: #1a8917;
-} */
+.container-setting {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 10px;
+  padding-top: 15px;
+  color: #585858;
+  font-size: 16px;
+  font-weight: 200;
+}
