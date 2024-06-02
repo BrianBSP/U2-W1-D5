@@ -8,24 +8,24 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+/* reset button */
+button {
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  border-width: 0;
+  border-style: none;
+  border-image: none;
+}
+/* modifiche stile header e navbar */
 header {
   background-color: #ffc017;
   padding-top: 20px;
   border-bottom: 1px solid black;
-
+  position: relative;
   margin-inline: auto;
 }
-/* hr {
-  display: block;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  unicode-bidi: isolate;
-  overflow: hidden;
-  border-style: inset;
-  border-width: 1px;
-} */
+
 nav {
   background-color: #ffc017;
   border-bottom: 1px solid black;
@@ -38,10 +38,6 @@ nav {
   z-index: 9999;
 }
 .nav-container {
-  /*  padding-left: 259px;
-  padding-right: 293px; */
-
-  /* background-color: #ffc017; */
   max-width: 900px;
   padding-top: 10px;
   margin-inline: auto;
@@ -65,7 +61,7 @@ nav li {
 .btn {
   max-width: 150px;
   background-color: #191919;
-  color: rgb(230, 230, 230);
+  color: rgb(240, 237, 237);
   padding: 5px 15px;
   border-radius: 50px;
   cursor: pointer;
@@ -77,16 +73,7 @@ nav li {
 .btn-nav.scrolled {
   background-color: #1a8917;
 }
-
-/* Prove */
-/* .btn-nav:hover {
-  background-color: #1a8917;
-} */
-
-/* transition bottone allo scroll */
-
 .logo-img {
-  /* flex-grow: 2; */
   margin-right: 150px;
 }
 h1 {
@@ -99,7 +86,6 @@ h1 {
   max-width: 900px;
   height: 325px;
   margin-inline: auto;
-  position: relative;
 }
 .contain-title p {
   font-family: "Roboto", sans-serif;
@@ -107,7 +93,7 @@ h1 {
 .emme {
   position: absolute;
   top: 20px;
-  left: 85%;
+  right: 0;
   height: 300px;
 }
 .contain-title {
@@ -117,12 +103,7 @@ h1 {
   justify-content: center;
   row-gap: 25px;
 }
-/* section h3::before {
-  content: url("../imgs/svg/trending.svg");
-  position: relative;
-
-  margin-right: 10px;
-} */
+/* modifiche stile section */
 h3 {
   padding-left: 15px;
   padding-top: 8px;
@@ -132,10 +113,13 @@ h3 {
   display: flex;
 }
 section {
+  border-bottom: 1.5px solid rgb(214, 214, 214);
+}
+.contain-section {
   max-width: 900px;
   height: 340px;
   margin: auto;
-  margin-block: 50px;
+  margin-block: 30px;
 }
 .container-box {
   height: 325px;
@@ -156,40 +140,47 @@ section {
   font-family: "Roboto", sans-serif;
 }
 .box-info {
+  width: 250px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+.box-info-autore {
+  display: flex;
+  column-gap: 6px;
+}
+.box-info-autore img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.autore {
+  font-size: 10px;
+  padding-top: 8px;
+  font-weight: 500;
+}
+.autore span {
+  color: gray;
 }
 h4 {
   font-size: 13px;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
-.box-info p {
-  font-size: 12px;
-  margin-bottom: 13px;
-  padding-left: 5px;
-  padding-top: 8px;
+
+.box-info-data {
+  display: flex;
+  justify-content: space-between;
 }
-/* .box-info p:last-of-type {
+.box-info-data span {
   font-size: 10px;
-  color: rgb(95, 95, 95);
-  margin-top: 13px;
-  letter-spacing: 1px;
-} */
+  color: grey;
+}
 .box-info-titolo {
   display: flex;
 }
-.box-info-titolo img {
-  width: 25px;
-  height: 25px;
-}
-/* .box-info :first-child::before {
-  content: url("../imgs/image01.jpeg");
-  margin-right: 5px;
-  border-radius: 3px;
-  width: auto;
-} */
+
+/* modiche stile article */
 .big-container {
   max-width: 900px;
   margin-inline: auto;
@@ -197,7 +188,6 @@ h4 {
   display: flex;
   column-gap: 20px;
   align-items: start;
-  /* position: relative; */
 }
 article {
   display: flex;
