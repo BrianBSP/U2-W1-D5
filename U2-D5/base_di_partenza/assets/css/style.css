@@ -15,7 +15,7 @@ header {
 
   margin-inline: auto;
 }
-hr {
+/* hr {
   display: block;
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
@@ -25,12 +25,23 @@ hr {
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
-}
+} */
 nav {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  padding-top: 44px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 1.3s;
+  z-index: 9999;
+}
+.nav-container {
   /*  padding-left: 259px;
   padding-right: 293px; */
-  min-width: 500px;
-  background-color: #ffc017;
+
+  /* background-color: #ffc017; */
   max-width: 900px;
   padding-top: 10px;
   margin-inline: auto;
@@ -41,11 +52,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
-  border-bottom: 1px solid black;
-  transition: background-color 1.3s;
-
   padding-bottom: 5px;
+  z-index: 9999;
 }
 nav ul {
   display: flex;
@@ -63,7 +71,7 @@ nav li {
   cursor: pointer;
   transition: background-color 1.3s;
 }
-nav.scrolled {
+#navBar.scrolled {
   background-color: white;
 }
 .btn-nav.scrolled {
@@ -227,6 +235,6 @@ aside h5 {
   flex-wrap: wrap;
   gap: 5px;
 }
-.applyscroll {
+/* .applyscroll {
   background-color: #1a8917;
-}
+} */
