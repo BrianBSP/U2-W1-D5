@@ -3,7 +3,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -25,7 +24,6 @@ header {
   position: relative;
   margin-inline: auto;
 }
-
 nav {
   background-color: #ffc017;
   border-bottom: 1px solid black;
@@ -90,9 +88,15 @@ h1 {
 .contain-title p {
   font-family: "Roboto", sans-serif;
 }
-.emme {
+/* .emme {
   position: absolute;
   top: 40px;
+  right: 0;
+  height: 300px;
+} */
+svg {
+  position: absolute;
+  top: 35px;
   right: 0;
   height: 300px;
 }
@@ -275,3 +279,15 @@ aside h5 {
   font-size: 16px;
   font-weight: 200;
 }
+/* @keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.fade {
+  animation: fade 2s infinite;
+} */
